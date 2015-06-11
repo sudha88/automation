@@ -32,16 +32,14 @@ describe('edit profile specs', function () {
                         login_util.signIn()
                             .then(function(){
                                 edit_util.clickEditProfile();
-
-                            })
-
-                            .then(function () {
+                            }).then(function () {
                                 edit_util.editProfile(info);
                             })
-                                    .then(function () {
-                                        expect(element(by.linkText('Sign out'))).tobeDefined();
-                                    });
+                            .then(function () {
+                                expect(element(by.linkText('Sign out'))).tobeDefined();
                             });
+                    });
+
 
                     });
             });

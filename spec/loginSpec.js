@@ -75,7 +75,6 @@ describe('login specs', function () {
 
                 login_util.forgotPassword()
                     .then(function (url) {
-
                         expect(url).toContain('users/password/new');
                     });
             });

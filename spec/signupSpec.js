@@ -12,20 +12,19 @@ describe('signUp page specs', function () {
 
         browser.get('https://avant-qa-screening.herokuapp.com/users/sign_up')
             .then(function () {
-
                 login_util.setUserName('sudha3@gmail.com')
                     .then(function () {
                         login_util.setPassword('google123')
                     }).then(function () {
                         login_util.setConfirmedPassword('google123')
-                    })
-                    .then(function () {
+                    }).then(function () {
                         login_util.signIn()
                             .then(function (url) {
                                 expect(url).toContain('dashboard');
                             }).then(function () {
                                 login_util.signOut();
                             });
+
                     });
 
             });
