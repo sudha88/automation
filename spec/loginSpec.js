@@ -3,7 +3,7 @@
  */
 
 'use strict';
-xdescribe('login specs', function () {
+describe('login specs', function () {
 
     var login_util = require('../utils/login_util.js');
     browser.ignoreSynchronization = true;

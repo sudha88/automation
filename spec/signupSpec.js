@@ -2,12 +2,12 @@
  * Created by sudhamenon on 6/9/15.
  */
 'use strict';
-xdescribe('signUp page specs', function () {
+describe('signUp page specs', function () {
 
     var login_util = require('../utils/login_util.js');
     browser.ignoreSynchronization = true;
 
-    xit('signup successfully', function () {
+    it('signup successfully', function () {
 
 
         browser.get('https://avant-qa-screening.herokuapp.com/users/sign_up')
