@@ -10,5 +10,11 @@ Start selenium server
 webdriver-manager start
 
 To run scripts type this on command line.You need to be logged in project directory
+
 protractor conf.js
+
+
+Please find additional documentation to protractor on hwo to run scripts here
+http://angular.github.io/protractor/#/
+
 
