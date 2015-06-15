@@ -36,7 +36,7 @@ describe('edit profile specs', function () {
                                 edit_util.editProfile(info);
                             })
                             .then(function () {
-                                expect(element(by.linkText('Sign out'))).tobeDefined();
+                                expect(element(by.linkText('Sign out'))).toBeDefined();
                             });
                     });
 
